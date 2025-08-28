@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemen HTML Dasar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        
+        h2 {
+            color: #2980b9;
+            margin-top: 30px;
+        }
+        
+        .demo-box {
+            background-color: #f8f9fa;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        
+        .code-example {
+            background-color: #f1f1f1;
+            border-left: 4px solid #3498db;
+            padding: 10px 15px;
+            margin: 10px 0;
+            font-family: monospace;
+            white-space: pre-wrap;
+        }
+        
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px 12px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+        }
+        
+        .highlight {
+            background-color: #ffffcc;
+            padding: 2px 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Elemen HTML Dasar</h1>
+    <p>Halaman ini menunjukkan berbagai elemen HTML dasar yang sering digunakan dalam pengembangan web.</p>
+    
+    <h2>Heading (H1-H6)</h2>
+    <div class="demo-box">
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+    </div>
+    <div class="code-example">&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;h4&gt;Heading 4&lt;/h4&gt;
+&lt;h5&gt;Heading 5&lt;/h5&gt;
+&lt;h6&gt;Heading 6&lt;/h6&gt;</div>
+    
+    <h2>Paragraf</h2>
+    <div class="demo-box">
+        <p>Ini adalah contoh paragraf. Paragraf biasanya berisi beberapa kalimat yang membentuk satu kesatuan ide.</p>
+        <p>Ini adalah paragraf kedua. Perhatikan bahwa setiap paragraf secara otomatis memiliki margin atas dan bawah.</p>
+    </div>
+    <div class="code-example">&lt;p&gt;Ini adalah contoh paragraf. Paragraf biasanya berisi beberapa kalimat yang membentuk satu kesatuan ide.&lt;/p&gt;
+&lt;p&gt;Ini adalah paragraf kedua. Perhatikan bahwa setiap paragraf secara otomatis memiliki margin atas dan bawah.&lt;/p&gt;</div>
+    
+    <h2>Pemformatan Teks</h2>
+    <div class="demo-box">
+        <p><strong>Teks tebal</strong> menggunakan tag strong.</p>
+        <p><em>Teks miring</em> menggunakan tag em.</p>
+        <p><u>Teks bergaris bawah</u> menggunakan tag u.</p>
+        <p><mark>Teks yang disorot</mark> menggunakan tag mark.</p>
+        <p><small>Teks kecil</small> menggunakan tag small.</p>
+        <p>Teks <sub>subscript</sub> menggunakan tag sub.</p>
+        <p>Teks <sup>superscript</sup> menggunakan tag sup.</p>
+        <p><code>Kode</code> menggunakan tag code.</p>
+        <p><kbd>Tombol keyboard</kbd> menggunakan tag kbd.</p>
+    </div>
+    <div class="code-example">&lt;p&gt;&lt;strong&gt;Teks tebal&lt;/strong&gt; menggunakan tag strong.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Teks miring&lt;/em&gt; menggunakan tag em.&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;Teks bergaris bawah&lt;/u&gt; menggunakan tag u.&lt;/p&gt;
+&lt;p&gt;&lt;mark&gt;Teks yang disorot&lt;/mark&gt; menggunakan tag mark.&lt;/p&gt;
+&lt;p&gt;&lt;small&gt;Teks kecil&lt;/small&gt; menggunakan tag small.&lt;/p&gt;
+&lt;p&gt;Teks &lt;sub&gt;subscript&lt;/sub&gt; menggunakan tag sub.&lt;/p&gt;
+&lt;p&gt;Teks &lt;sup&gt;superscript&lt;/sup&gt; menggunakan tag sup.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;Kode&lt;/code&gt; menggunakan tag code.&lt;/p&gt;
+&lt;p&gt;&lt;kbd&gt;Tombol keyboard&lt;/kbd&gt; menggunakan tag kbd.&lt;/p&gt;</div>
+    
+    <h2>Tautan (Link)</h2>
+    <div class="demo-box">
+        <p><a href="https://www.example.com">Ini adalah tautan ke example.com</a></p>
+        <p><a href="https://www.example.com" target="_blank">Ini adalah tautan yang terbuka di tab baru</a></p>
+        <p><a href="#heading-section">Ini adalah tautan ke bagian lain di halaman yang sama</a></p>
+    </div>
+    <div class="code-example">&lt;p&gt;&lt;a href="https://www.example.com"&gt;Ini adalah tautan ke example.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.example.com" target="_blank"&gt;Ini adalah tautan yang terbuka di tab baru&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="#heading-section"&gt;Ini adalah tautan ke bagian lain di halaman yang sama&lt;/a&gt;&lt;/p&gt;</div>
+    
+    <h2>Gambar</h2>
+    <div class="demo-box">
+        <img src="https://via.placeholder.com/300x200" alt="Gambar placeholder 300x200">
+        <p><small>Gambar dengan ukuran 300x200 piksel</small></p>
+        
+        <img src="https://via.placeholder.com/150" alt="Gambar placeholder 150x150" style="border-radius: 50%;">
+        <p><small>Gambar dengan border-radius 50% (lingkaran)</small></p>
+    </div>
+    <div class="code-example">&lt;img src="https://via.placeholder.com/300x200" alt="Gambar placeholder 300x200"&gt;
+
+&lt;img src="https://via.placeholder.com/150" alt="Gambar placeholder 150x150" style="border-radius: 50%;"&gt;</div>
+    
+    <h2 id="heading-section">Daftar (List)</h2>
+    <div class="demo-box">
+        <h3>Daftar Tidak Berurutan (Unordered List)</h3>
+        <ul>
+            <li>Item pertama</li>
+            <li>Item kedua</li>
+            <li>Item ketiga
+                <ul>
+                    <li>Sub-item 1</li>
+                    <li>Sub-item 2</li>
+                </ul>
+            </li>
+        </ul>
+        
+        <h3>Daftar Berurutan (Ordered List)</h3>
+        <ol>
+            <li>Langkah pertama</li>
+            <li>Langkah kedua</li>
+            <li>Langkah ketiga</li>
+        </ol>
+        
+        <h3>Daftar Definisi (Definition List)</h3>
+        <dl>
+            <dt>HTML</dt>
+            <dd>HyperText Markup Language - bahasa markup untuk membuat struktur halaman web.</dd>
+            
+            <dt>CSS</dt>
+            <dd>Cascading Style Sheets - bahasa yang digunakan untuk mendesain tampilan halaman web.</dd>
+        </dl>
+    </div>
+    <div class="code-example">&lt;h3&gt;Daftar Tidak Berurutan (Unordered List)&lt;/h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;Item pertama&lt;/li&gt;
+    &lt;li&gt;Item kedua&lt;/li&gt;
+    &lt;li&gt;Item ketiga
+        &lt;ul&gt;
+            &lt;li&gt;Sub-item 1&lt;/li&gt;
+            &lt;li&gt;Sub-item 2&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Daftar Berurutan (Ordered List)&lt;/h3&gt;
+&lt;ol&gt;
+    &lt;li&gt;Langkah pertama&lt;/li&gt;
+    &lt;li&gt;Langkah kedua&lt;/li&gt;
+    &lt;li&gt;Langkah ketiga&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3&gt;Daftar Definisi (Definition List)&lt;/h3&gt;
+&lt;dl&gt;
+    &lt;dt&gt;HTML&lt;/dt&gt;
+    &lt;dd&gt;HyperText Markup Language - bahasa markup untuk membuat struktur halaman web.&lt;/dd&gt;
+    
+    &lt;dt&gt;CSS&lt;/dt&gt;
+    &lt;dd&gt;Cascading Style Sheets - bahasa yang digunakan untuk mendesain tampilan halaman web.&lt;/dd&gt;
+&lt;/dl&gt;</div>
+    
+    <h2>Tabel</h2>
+    <div class="demo-box">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nama</th>
+                    <th>Usia</th>
+                    <th>Pekerjaan</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td>30</td>
+                    <td>Web Developer</td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>25</td>
+                    <td>Desainer Grafis</td>
+                </tr>
+                <tr>
+                    <td>Bob Johnson</td>
+                    <td>35</td>
+                    <td>Manajer Produk</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="code-example">&lt;table&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Nama&lt;/th&gt;
+            &lt;th&gt;Usia&lt;/th&gt;
+            &lt;th&gt;Pekerjaan&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;John Doe&lt;/td&gt;
+            &lt;td&gt;30&lt;/td&gt;
+            &lt;td&gt;Web Developer&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Jane Smith&lt;/td&gt;
+            &lt;td&gt;25&lt;/td&gt;
+            &lt;td&gt;Desainer Grafis&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Bob Johnson&lt;/td&gt;
+            &lt;td&gt;35&lt;/td&gt;
+            &lt;td&gt;Manajer Produk&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</div>
+    
+    <h2>Formulir (Form)</h2>
+    <div class="demo-box">
+        <form action="#" method="post">
+            <div style="margin-bottom: 15px;">
+                <label for="nama">Nama:</label><br>
+                <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda">
+            </div>
+            
+            <div style="margin-bottom: 15px;">
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Masukkan email Anda">
+            </div>
+            
+            <div style="margin-bottom: 15px;">
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" placeholder="Masukkan password">
+            </div>
+            
+            <div style="margin-bottom: 15px;">
+                <label>Jenis Kelamin:</label><br>
+                <input type="radio" id="pria" name="jenis_kelamin" value="pria">
+                <label for="pria">Pria</label><br>
+                <input type="radio" id="wanita" name="jenis_kelamin" value="wanita">
+                <label for="wanita">Wanita</label>
+            </div>
+            
+            <div style="margin-bottom: 15px;">
+                <label>Hobi:</label><br>
+                <input type="checkbox" id="membaca" name="hobi" value="membaca">
+                <label for="membaca">Membaca</label><br>
+                <input type="checkbox" id="olahraga" name="hobi" value="olahraga">
+                <label for="olahraga">Olahraga</label><br>
+                <input type="checkbox" id="musik" name="hobi" value="musik">
+                <label for="musik">Musik</label>
+            </div>
+            
+            <div style="margin-bottom: 15px;">
+                <label for="kota">Kota:</label><br>
+                <select id="kota" name="kota">
+                    <option value="">Pilih Kota</option>
+                    <option value="jakarta">Jakarta</option>
+                    <option value="bandung">Bandung</option>
+                    <option value="surabaya">Surabaya</option>
+                    <option value="yogyakarta">Yogyakarta</option>
+                </select>
+            </div>
+            
+            <div style="margin-bottom: 15px;">
+                <label for="pesan">Pesan:</label><br>
+                <textarea id="pesan" name="pesan" rows="4" placeholder="Tulis pesan Anda di sini"></textarea>
+            </div>
+            
+            <div style="margin-bottom: 15px;">
+                <label for="file">Unggah File:</label><br>
+                <input type="file" id="file" name="file">
+            </div>
+            
+            <div>
+                <input type="submit" value="Kirim">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+    <div class="code-example">&lt;form action="#" method="post"&gt;
+    &lt;div&gt;
+        &lt;label for="nama"&gt;Nama:&lt;/label&gt;&lt;br&gt;
+        &lt;input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda"&gt;
+    &lt;/div&gt;
+    
+    &lt;div&gt;
+        &lt;label for="email"&gt;Email:&lt;/label&gt;&lt;br&gt;
+        &lt;input type="email" id="email" name="email" placeholder="Masukkan email Anda"&gt;
+    &lt;/div&gt;
+    
+    &lt;div&gt;
+        &lt;label for="password"&gt;Password:&lt;/label&gt;&lt;br&gt;
+        &lt;input type="password" id="password" name="password" placeholder="Masukkan password"&gt;
+    &lt;/div&gt;
+    
+    &lt;div&gt;
+        &lt;label&gt;Jenis Kelamin:&lt;/label&gt;&lt;br&gt;
+        &lt;input type="radio" id="pria" name="jenis_kelamin" value="pria"&gt;
+        &lt;label for="pria"&gt;Pria&lt;/label&gt;&lt;br&gt;
+        &lt;input type="radio" id="wanita" name="jenis_kelamin" value="wanita"&gt;
+        &lt;label for="wanita"&gt;Wanita&lt;/label&gt;
+    &lt;/div&gt;
+    
+    &lt;div&gt;
+        &lt;label&gt;Hobi:&lt;/label&gt;&lt;br&gt;
+        &lt;input type="checkbox" id="membaca" name="hobi" value="membaca"&gt;
+        &lt;label for="membaca"&gt;Membaca&lt;/label&gt;&lt;br&gt;
+        &lt;input type="checkbox" id="olahraga" name="hobi" value="olahraga"&gt;
+        &lt;label for="olahraga"&gt;Olahraga&lt;/label&gt;&lt;br&gt;
+        &lt;input type="checkbox" id="musik" name="hobi" value="musik"&gt;
+        &lt;label for="musik"&gt;Musik&lt;/label&gt;
+    &lt;/div&gt;
+    
+    &lt;div&gt;
+        &lt;label for="kota"&gt;Kota:&lt;/label&gt;&lt;br&gt;
+        &lt;select id="kota" name="kota"&gt;
+            &lt;option value=""&gt;Pilih Kota&lt;/option&gt;
+            &lt;option value="jakarta"&gt;Jakarta&lt;/option&gt;
+            &lt;option value="bandung"&gt;Bandung&lt;/option&gt;
+            &lt;option value="surabaya"&gt;Surabaya&lt;/option&gt;
+            &lt;option value="yogyakarta"&gt;Yogyakarta&lt;/option&gt;
+        &lt;/select&gt;
+    &lt;/div&gt;
+    
+    &lt;div&gt;
+        &lt;label for="pesan"&gt;Pesan:&lt;/label&gt;&lt;br&gt;
+        &lt;textarea id="pesan" name="pesan" rows="4" placeholder="Tulis pesan Anda di sini"&gt;&lt;/textarea&gt;
+    &lt;/div&gt;
+    
+    &lt;div&gt;
+        &lt;label for="file"&gt;Unggah File:&lt;/label&gt;&lt;br&gt;
+        &lt;input type="file" id="file" name="file"&gt;
+    &lt;/div&gt;
+    
+    &lt;div&gt;
+        &lt;input type="submit" value="Kirim"&gt;
+        &lt;input type="reset" value="Reset"&gt;
+    &lt;/div&gt;
+&lt;/form&gt;</div>
+    
+    <h2>Elemen Semantik HTML5</h2>
+    <div class="demo-box">
+        <p>HTML5 memperkenalkan elemen semantik yang memberikan makna pada struktur halaman web:</p>
+        <ul>
+            <li><code>&lt;header&gt;</code> - Bagian header halaman atau bagian</li>
+            <li><code>&lt;nav&gt;</code> - Bagian navigasi</li>
+            <li><code>&lt;main&gt;</code> - Konten utama halaman</li>
+            <li><code>&lt;section&gt;</code> - Bagian dari dokumen</li>
+            <li><code>&lt;article&gt;</code> - Konten independen yang dapat berdiri sendiri</li>
+            <li><code>&lt;aside&gt;</code> - Konten sampingan yang terkait dengan konten utama</li>
+            <li><code>&lt;footer&gt;</code> - Bagian footer halaman atau bagian</li>
+            <li><code>&lt;figure&gt;</code> dan <code>&lt;figcaption&gt;</code> - Untuk gambar dengan keterangan</li>
+        </ul>
+    </div>
+    <div class="code-example">&lt;header&gt;
+    &lt;h1&gt;Judul Website&lt;/h1&gt;
+    &lt;nav&gt;
+        &lt;ul&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Beranda&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Tentang&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;Kontak&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+&lt;/header&gt;
+
+&lt;main&gt;
+    &lt;section&gt;
+        &lt;h2&gt;Bagian 1&lt;/h2&gt;
+        &lt;article&gt;
+            &lt;h3&gt;Artikel 1&lt;/h3&gt;
+            &lt;p&gt;Konten artikel...&lt;/p&gt;
+        &lt;/article&gt;
+    &lt;/section&gt;
+    
+    &lt;aside&gt;
+        &lt;h3&gt;Sidebar&lt;/h3&gt;
+        &lt;p&gt;Konten sampingan...&lt;/p&gt;
+    &lt;/aside&gt;
+&lt;/main&gt;
+
+&lt;footer&gt;
+    &lt;p&gt;&copy; 2023 Website Saya&lt;/p&gt;
+&lt;/footer&gt;</div>
+    
+    <h2>Atribut HTML Penting</h2>
+    <div class="demo-box">
+        <p>Beberapa atribut HTML penting yang sering digunakan:</p>
+        <ul>
+            <li><code>id</code> - Mengidentifikasi elemen secara unik</li>
+            <li><code>class</code> - Mengklasifikasikan elemen untuk styling CSS</li>
+            <li><code>style</code> - Menambahkan CSS inline</li>
+            <li><code>title</code> - Menambahkan tooltip saat hover</li>
+            <li><code>data-*</code> - Menyimpan data kustom</li>
+            <li><code>aria-*</code> - Atribut aksesibilitas</li>
+        </ul>
+        
+        <p>Contoh penggunaan:</p>
+        <div id="contoh-id" class="contoh-class" style="color: blue;" title="Ini adalah tooltip" data-info="Informasi tambahan">Elemen dengan berbagai atribut</div>
+    </div>
+    <div class="code-example">&lt;div 
+    id="contoh-id" 
+    class="contoh-class" 
+    style="color: blue;" 
+    title="Ini adalah tooltip" 
+    data-info="Informasi tambahan"
+&gt;
+    Elemen dengan berbagai atribut
+&lt;/div&gt;</div>
+    
+    <h2>Karakter Khusus (Entities)</h2>
+    <div class="demo-box">
+        <p>Beberapa karakter khusus dalam HTML:</p>
+        <ul>
+            <li><code>&amp;lt;</code> menghasilkan: &lt; (tanda kurang dari)</li>
+            <li><code>&amp;gt;</code> menghasilkan: &gt; (tanda lebih dari)</li>
+            <li><code>&amp;amp;</code> menghasilkan: &amp; (ampersand)</li>
+            <li><code>&amp;quot;</code> menghasilkan: " (tanda kutip ganda)</li>
+            <li><code>&amp;apos;</code> menghasilkan: ' (tanda kutip tunggal)</li>
+            <li><code>&amp;copy;</code> menghasilkan: &copy; (copyright)</li>
+            <li><code>&amp;reg;</code> menghasilkan: &reg; (registered trademark)</li>
+            <li><code>&amp;trade;</code> menghasilkan: &trade; (trademark)</li>
+            <li><code>&amp;nbsp;</code> menghasilkan: spasi yang tidak terputus</li>
+        </ul>
+    </div>
+    <div class="code-example">&lt;p&gt;Ini adalah contoh penggunaan &amp;lt;karakter khusus&amp;gt; dalam HTML.&lt;/p&gt;
+&lt;p&gt;Simbol copyright: &amp;copy; 2023&lt;/p&gt;</div>
+    
+    <footer style="margin-top: 50px; border-top: 1px solid #ddd; padding-top: 20px;">
+        <p>&copy; 2023 Belajar HTML dan CSS Dasar</p>
+        <p><a href="index.html">Kembali ke Halaman Utama</a></p>
+    </footer>
+</body>
+</html>
